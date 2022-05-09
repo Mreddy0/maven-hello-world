@@ -1,0 +1,7 @@
+node{
+  stage('SCM Checkout')
+  git 'https://github.com/pdurbin/maven-hello-world/new/master/my-app'
+}
+stage('Compile-package){
+      sh 'mvn package'
+      }
